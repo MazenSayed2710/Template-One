@@ -32,7 +32,16 @@ html{
     color: #797979;
     margin: -33px 0 0 0;
 }
+@media (max-width: 768px) {
+    .special-heading{
+        font-size: 60px;
+    }
+    .special-heading + p{
+        font-size: 15px;
+    }
+    
 
+}
 
 /* Small */
 @media (min-width: 768px) {
@@ -52,6 +61,7 @@ html{
       width: 1170px;
     }
 }
+/* Start Header */
 .header {
     padding: 20px;
 }
@@ -139,6 +149,8 @@ li a {
     color: black;
     display: block;
 }
+/* End Header */
+/* Start Header */
 .landing {
     background-image: url(../images/landing.jpg);
     background-size: cover;
@@ -170,6 +182,12 @@ li a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
 }
+@media (max-width: 768px) {
+    .feature .container{
+        display: block;
+    }
+}
+
 .feature .container .feat {
     text-align: center;
     padding: 10px;
@@ -209,6 +227,11 @@ li a {
     grid-gap: 30px;
     margin-top: 100px;
 }
+@media(max-width:768px){
+    .services-2 {
+        display: block;
+    }
+}
 .text h3 {
     margin: 0;
 }
@@ -216,7 +239,6 @@ li a {
     color: #444;
     font-weight: 300;
     line-height: 1.6;
-    width: 278px;
 }
 @media(max-width:768px){
     .srv{
@@ -265,6 +287,13 @@ li a {
     margin-top: 100px;
     margin-bottom: 50px;
 }
+@media(max-width:768px){
+    .big{
+        display: block;
+        
+    }
+}
+
 .Portofolio-content img{
     width: 100%;
 }
@@ -291,6 +320,11 @@ li a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
     margin-top: 100px;
+}
+@media(max-width:768px){
+    .About-content {
+        display: block;
+    }
 }
 .About-content img {
     width: 250px;
@@ -359,13 +393,11 @@ h4.h-two {
     h4.h-one {      
         padding-left: 0;
         text-align: center;
-        width: 360px;
         margin-left: -18px;
     }
     h4.h-two {      
         padding-left: 0;
         text-align: center;
-        width: 360px;
         margin-left: -18px;
     }
     .About-content .image::before{
@@ -375,8 +407,7 @@ h4.h-two {
         display: none;
     }
     .text p {
-        width: 360px;
-        margin-left: -63px;
+        margin-left: 0;
     }
 
 }
@@ -394,6 +425,7 @@ h4.h-two {
     text-align: center;
     padding: 20px;
     background-color: var(--main-background-color);
+    transition: 0.3s;
 }
 .text-3 {
     margin-top: 70px;
@@ -408,6 +440,11 @@ h3.A {
     color: var(--main-color);
     font-weight: 800;
     font-size: 25px;
+}
+@media(max-width:768px){
+    .text-3 a {
+        font-size: 20px;
+    }
 }
 .label {
     display: flex;
